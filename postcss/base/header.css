@@ -1,0 +1,104 @@
+$font-big: 5rem;
+$font-size: 1rem;
+$img: "../img/carousel-1.jpg";
+$shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+$white: #fff;
+$black: #000;
+
+.header {
+  height: 105vh;
+  background-image: url($img);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0rem $font-big;
+  background-color: $white;
+  height: 70px;
+  box-shadow: $shadow;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.menu__logo--green {
+  color: #0ccc26;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+
+  &__logo {
+    font-size: 4rem;
+    color: #fcba03;
+
+    &--green {
+      color: #0ccc26;
+    }
+  }
+
+  &__link {
+    padding: $font-size;
+    color: $black;
+    text-decoration: none;
+
+    &:hover{
+      color: #0ccc26;
+    }
+  }
+
+  &__icon {
+    background: transparent;
+    border: none;
+    font-size: 2.5rem;
+    display: none;
+  }
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: $white;
+  text-align: center;
+
+  &__title {
+    margin-top: 20rem;
+    font-size: $font-big;
+
+    &--orange {
+      color: #fcba03;
+    }
+  }
+
+  &__subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    width: 50vw;
+  }
+}
+
+.btn__orange,
+.btn__green {
+  margin: $font-size;
+  color: $white;
+  text-decoration: none;
+  font-weight: 900;
+  padding: $font-size;
+  border-radius: 5px;
+}
+
+.btn__orange {
+  background-color: #fcba03;
+}
+
+.btn__green {
+  background-color: #0ccc26;
+}

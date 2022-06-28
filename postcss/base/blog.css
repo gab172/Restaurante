@@ -1,0 +1,44 @@
+$normal-size: 1rem;
+$shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+.container-card {
+  margin-top: 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.blog {
+  margin: $normal-size;
+  width: 50%;
+
+  &__card {
+    box-shadow: $shadow;
+    width: 80%;
+    margin: 0 auto;
+    padding: $normal-size;
+    border-radius: 7px;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    &-title {
+      padding: $normal-size;
+      margin: $normal-size;
+      color: #545252;
+    }
+
+    &-text {
+      padding: $normal-size;
+      font-size: $normal-size;
+      margin-bottom: $normal-size;
+      font-weight: 300;
+    }
+
+    &-btn {
+     margin: 2rem $normal-size;
+     width: 62%;
+    }
+  }
+}

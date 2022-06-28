@@ -1,0 +1,19 @@
+.team {
+  width: 40%;
+  margin: 0 auto;
+
+  &__features-img {
+    margin: 1rem;
+    width: 80%;
+  }
+
+  &__name {
+    color: #545252;
+    text-align: center;
+  }
+
+  &__role {
+    text-align: center;
+    font-weight: 300;
+  }
+}

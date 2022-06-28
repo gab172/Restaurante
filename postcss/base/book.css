@@ -1,0 +1,121 @@
+$big-size: 2rem;
+$border-size: 2px;
+$font-300: 300;
+$font-900: 900;
+$width-full: 90%;
+$white: #fff;
+$color-primary: orange;
+
+.book {
+  margin: 3rem auto;
+  width: 80%;
+
+  &__title {
+    color: #545252;
+    font-size: $big-size;
+    margin-bottom: 1rem;
+
+    &--gren {
+      color: #b7ff66;
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__text {
+    font-weight: $font-300;
+    margin-bottom: $big-size;
+
+    &--center {
+      width: 70%;
+      margin: $big-size auto;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9bc28;
+    padding: 1.2rem $big-size;
+    margin: 0 auto;
+    width: $width-full;
+
+   &-inputs {
+     border: $border-size solid $white;
+     width: $width-full;
+     margin: 1rem;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+
+     & input {
+       width: $width-full;
+       padding: 1rem;
+       color: $white;
+       background: none;
+       border: none;
+       outline: none;
+       font-size: 1rem;
+
+       &::placeholder {
+         color: $white;
+       }
+     }
+
+     & i {
+       padding: 1rem;
+       color: $white;
+     }
+   }
+
+   &-btn {
+     width: $width-full;
+     background-color: $white;
+     color: $color-primary;
+     font-weight: $font-900;
+     padding: 1rem;
+     border: none;
+     border-radius: 7px;
+     font-size: 1rem;
+   }
+  }
+
+  &__btn {
+    background-color: $color-primary;
+    color: $white;
+    font-weight: $font-900;
+    padding: 1rem;
+    text-decoration: none;
+    border-radius: 7px;
+
+    &--block {
+      display: block;
+      width: 70%;
+      margin: 2.5rem auto;
+      text-align: center;
+      font-weight: 500;
+    }
+
+   &--inline {
+     background: transparent;
+     color: $color-primary;
+     border-bottom: $border-size solid orange;
+     margin-top: $big-size;
+     font-weight: $font-300;
+   }
+  }
+
+  &__features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    &-img {
+      border-radius: $border-size;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
